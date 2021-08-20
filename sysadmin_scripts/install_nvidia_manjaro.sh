@@ -2,16 +2,20 @@
 
 ##Dependencies
 #Before installing be sure to have or install next packages depending on kernel version and nvidia packages
-#checking which kernel version exist in your OS
+#check out which kernel version exist in your OS
 
 uname -a
 
 #nvidia package, this one the number linux59 refers to kernel version and 455 to the last nvidia version drivers
+
 sudo pacman -S linux59-nvidia-455xx
+
 #if you have only one kernel you could use
+
 pacman -S nvidia
 
 #Also optimus-manager need base-devel and its installation is using "pamac" or "yay"
+
 yay -S base-devel 
 pamac install base-devel
 
@@ -21,6 +25,7 @@ pamac install base-devel
 yaourt -S optimus-manager-qt optimus-manager
 
 #optimus-manager service activation
+
 systemctl start optimus-manager
 systemctl enable optimus-manager
 
