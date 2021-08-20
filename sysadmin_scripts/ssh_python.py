@@ -4,7 +4,7 @@ import paramiko
 import os
 host = '192.168.0.31'
 user = 'splunk1'
-passw = 'ahb123##'
+passw = 'yourpassword'
 
 client=paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
